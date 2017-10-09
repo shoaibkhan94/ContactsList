@@ -1,7 +1,6 @@
 import React from 'react';
 
 const EmployeeDetail = (props) =>{
-    console.log(props.employee);
     const { name, avatar, email, phone } = props.employee;
     return(
         <div className="thumbnail">

@@ -7,7 +7,6 @@ Meteor.startup(() => {
   // code to run on server at startup
     //Check if data already exists
     var numberRecords = Employees.find({}).count();
-    console.log(numberRecords);
     if(!numberRecords){
         // Generate Data With Faker
         _.times(5000, () => {
